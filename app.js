@@ -237,7 +237,7 @@ const products = [
     "category": "FEMININO",
     "name": "FAKHAR GOLD",
     "basePrice": 179,
-    "image": "images/fakhar-gold.jpg"
+    "image": "images/Fakhar-gold.jpg"
   },
   {
     "category": "FEMININO",
