@@ -35,7 +35,7 @@ const products = [
     "category": "MASCULINO",
     "name": "Emarati khanjar",
     "basePrice": 349,
-    "image": "images/emarati-khanjar.jpg"
+    "image": "images/Emarati-khanjar.jpg"
   },
   {
     "category": "MASCULINO",
@@ -84,14 +84,14 @@ const products = [
     "category": "MASCULINO",
     "name": "VIKING CAIRO",
     "basePrice": 335,
-    "image": "images/viking-cairo.jpg"
+    "image": "images/Viking-Cairo.jpg"
     
   },
   {
     "category": "MASCULINO",
     "name": "FAKHAR Black",
     "basePrice": 175,
-    "image": "images/fakhar-Black.jpg"
+    "image": "images/fakhar-black.jpg"
     
   },
   {
@@ -514,7 +514,7 @@ products.push(
   "category": "MASCULINO",
   "name": "CLUB DE NUIT ICONIC",
   "basePrice": 329,
-  "image": "images/club-de-nuit-iconic.webp"
+    "image": "images/Club-de-Nuit-Iconic.webp"
 },
 {
   "category": "MASCULINO",
@@ -574,7 +574,7 @@ products.push(
   "category": "MASCULINO",
   "name": "DETOUR NOIR",
   "basePrice": 279,
-  "image": "images/detour-noir.webp"
+    "image": "images/Detour-noir.webp"
 },
 {
   "category": "MASCULINO",
@@ -646,7 +646,7 @@ products.push(
   "category": "MASCULINO",
   "name": "VICTORIOSO VICTORY",
   "basePrice": 219,
-  "image": "images/victorioso-victory.jpg"
+    "image": "images/Victorioso-Victory.jpg"
 },
 {
   "category": "MASCULINO",
@@ -798,7 +798,7 @@ products.push(
   "category": "UNISSEX",
   "name": "HAWAS ICE",
   "basePrice": 389,
-  "image": "images/hawas-ice.webp"
+    "image": "images/Hawas-ice.webp"
 },
 {
   "category": "UNISSEX",
@@ -876,7 +876,7 @@ products.push(
   "category": "UNISSEX",
   "name": "PROHIBIT INTENSE",
   "basePrice": 179,
-  "image": "images/prohibit-intense.webp"
+    "image": "images/Prohibit-Intense.webp"
 },
 {
   "category": "UNISSEX",
@@ -912,7 +912,7 @@ products.push(
   "category": "UNISSEX",
   "name": "SILVER SCENT INTENSE",
   "basePrice": 129,
-  "image": "images/silver-scent-intense.webp"
+    "image": "images/Silver-Scent-Intense.webp"
 },
 {
   "category": "UNISSEX",
