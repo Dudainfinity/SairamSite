@@ -1,0 +1,527 @@
+/* Sairam Imports Perfumes - branco + dourado */
+:root{
+  --bg:#ffffff;
+  --surface:#fbfbfb;
+  --text:#121212;
+  --muted:#5e5e5e;
+  --gold:#b88a2c;
+  --gold-2:#f3d38a;
+  --line:rgba(184,138,44,.22);
+  --shadow:0 16px 45px rgba(0,0,0,.08);
+  --radius:18px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(1100px 420px at 20% -10%, rgba(243,211,138,.35), transparent 60%),
+    radial-gradient(900px 380px at 85% 5%, rgba(184,138,44,.18), transparent 55%),
+    linear-gradient(180deg,#fff,#fff7ea 42%,#fff 100%);
+}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92vw);margin:0 auto}
+
+.skip{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip:focus{left:16px;top:16px;width:auto;height:auto;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;z-index:999}
+
+.site-header{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(10px);
+  background:rgba(255,255,255,.75);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+
+.brand{display:flex;align-items:center;gap:14px}
+.brand-logo{width:74px;height:auto}
+.brand-text h1{font-family:"Playfair Display",serif;margin:0;font-size:24px;letter-spacing:.3px}
+.brand-text p{margin:2px 0 0;color:var(--muted);font-size:13px}
+
+.nav{display:flex;align-items:center;gap:12px;position:relative}
+.nav-menu{list-style:none;margin:0;padding:0;display:flex;gap:14px;align-items:center}
+.nav-menu a{padding:10px 12px;border-radius:12px;color:var(--muted);transition:all .2s ease}
+.nav-menu a:hover{background:rgba(184,138,44,.08);color:var(--text)}
+.nav-toggle{
+  display:none;
+  width:42px;height:42px;border-radius:14px;
+  border:1px solid var(--line);background:#fff;
+  align-items:center;justify-content:center;gap:4px;flex-direction:column;
+}
+.nav-toggle span{display:block;width:18px;height:2px;background:var(--text);border-radius:2px}
+.sr-only{position:absolute;left:-9999px}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:12px 14px;border-radius:14px;
+  border:1px solid var(--line);background:#fff;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+  transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+  font-weight:600;
+}
+.btn:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
+.btn:active{transform:translateY(0)}
+.btn-primary{
+  background:linear-gradient(135deg, rgba(184,138,44,.95), rgba(243,211,138,.95));
+  border-color:rgba(184,138,44,.35);
+}
+.btn-ghost{background:rgba(255,255,255,.75)}
+.btn-whatsapp{border-color:rgba(18,18,18,.10)}
+.btn-small{padding:10px 12px;border-radius:12px;font-size:14px}
+.wa-dot{width:10px;height:10px;border-radius:999px;background:radial-gradient(circle at 30% 30%,#5cff8d,#00b341);box-shadow:0 0 0 6px rgba(0,179,65,.12)}
+
+.hero{padding:26px 0}
+.hero-inner{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:stretch}
+.hero-left{
+  background:rgba(255,255,255,.75);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:22px;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+.hero-left h2{font-family:"Playfair Display",serif;margin:0 0 8px;font-size:34px}
+.hero-left p{margin:0 0 14px;color:var(--muted);line-height:1.6}
+.muted{color:var(--muted)}
+.small{font-size:12px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 10px}
+.hero-badges{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px;color:var(--muted);font-size:14px}
+
+.carousel{
+  position:relative;border-radius:var(--radius);overflow:hidden;
+  border:1px solid var(--line);box-shadow:var(--shadow);
+  background:linear-gradient(135deg, rgba(184,138,44,.12), rgba(243,211,138,.18));
+  min-height:320px;
+}
+.carousel-img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.02);filter:saturate(1.02) contrast(1.02)}
+.carousel-overlay{position:absolute;left:14px;top:14px;display:flex;gap:10px;flex-wrap:wrap}
+.pill{padding:8px 10px;background:rgba(18,18,18,.78);color:#fff;border-radius:999px;font-size:12px;border:1px solid rgba(255,255,255,.15)}
+.pill-light{background:rgba(255,255,255,.75);color:var(--text);border-color:var(--line)}
+
+.catalogo{padding:12px 0 46px}
+.section-title h3{margin:0;font-family:"Playfair Display",serif;font-size:28px}
+.section-title p{margin:6px 0 16px;color:var(--muted)}
+
+.filters{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  padding:12px;background:rgba(255,255,255,.7);
+  border:1px solid var(--line);border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.05);
+  margin-bottom:16px;
+}
+.chip{border:1px solid var(--line);background:#fff;padding:10px 12px;border-radius:999px;cursor:pointer;font-weight:600}
+.chip.is-active{background:linear-gradient(135deg, rgba(184,138,44,.22), rgba(243,211,138,.25));border-color:rgba(184,138,44,.35)}
+.search{margin-left:auto}
+.search input{
+  width:min(320px,70vw);
+  padding:11px 12px;border-radius:999px;
+  border:1px solid var(--line);
+  outline:none;background:rgba(255,255,255,.9);
+}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{
+  background:rgba(255,255,255,.78);
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+  display:flex;flex-direction:column;
+  min-height:240px;
+}
+.card-top{padding:14px 14px 8px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.badge{
+  font-size:12px;padding:6px 10px;border-radius:999px;
+  border:1px solid rgba(184,138,44,.35);
+  background:rgba(243,211,138,.25);
+  white-space:nowrap;
+}
+.badge.fem{background:rgba(184,138,44,.12)}
+.card h5{margin:0;font-size:15px;line-height:1.2;letter-spacing:.2px}
+.card-mid{padding:0 14px 14px;color:var(--muted);font-size:13px}
+.price{font-weight:800;color:var(--text);font-size:18px;margin-top:8px}
+.card-actions{margin-top:auto;padding:14px;display:flex;gap:10px}
+.card-actions .btn{width:100%;box-shadow:none}
+.card-actions .btn:hover{box-shadow:var(--shadow)}
+.end-space{height:26px}
+
+.footer{border-top:1px solid var(--line);background:rgba(255,255,255,.75);backdrop-filter:blur(10px)}
+.footer-inner{padding:26px 0;display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:18px}
+.footer h4{margin:0 0 8px;font-family:"Playfair Display",serif;font-size:18px}
+.footer p,.footer li{color:var(--muted);line-height:1.6}
+.footer ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.payments{display:grid;gap:6px}
+.footer-bottom{
+  padding:14px 0 18px;
+  display:flex;justify-content:space-between;align-items:center;
+  gap:12px;flex-wrap:wrap;
+  color:var(--muted);font-size:13px;
+}
+
+@media (max-width:900px){
+  .hero-inner{grid-template-columns:1fr}
+  .carousel{min-height:260px}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .footer-inner{grid-template-columns:1fr}
+  .search{margin-left:0;width:100%}
+  .search input{width:100%}
+}
+@media (max-width:560px){
+  .grid{grid-template-columns:1fr}
+  .nav-toggle{display:inline-flex}
+  .nav-menu{
+    position:absolute;right:4vw;top:74px;
+    flex-direction:column;align-items:stretch;
+    width:min(280px,92vw);
+    background:rgba(255,255,255,.96);
+    border:1px solid var(--line);
+    border-radius:18px;padding:10px;
+    box-shadow:var(--shadow);
+    display:none;
+  }
+  .nav-menu.is-open{display:flex}
+  .nav-menu a{padding:12px 12px}
+}
+
+
+/* Imagem do produto */
+.card-image {
+  width: 100%;
+  height: 220px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(184,138,44,.2);
+}
+.card-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding: 12px;
+}
+
+
+/* Logo no carrossel */
+.carousel-logo {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.78);
+  border: 1px solid rgba(184,138,44,.25);
+  padding: 6px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.10);
+}
+.carousel-logo img{
+  width:100%;
+  height:100%;
+  object-fit: contain;
+  display:block;
+}
+
+
+/* ===== Carrinho ===== */
+.cart-btn{position:relative}
+.cart-badge{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:22px;height:22px;padding:0 6px;
+  border-radius:999px;
+  background: rgba(184,138,44,.18);
+  border:1px solid rgba(184,138,44,.35);
+  font-size:12px;font-weight:800;
+}
+.cart-modal{position:fixed;inset:0;z-index:120}
+.cart-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.35)}
+.cart-panel{
+  position:absolute;right:0;top:0;height:100%;
+  width:min(420px, 92vw);
+  background:rgba(255,255,255,.92);
+  backdrop-filter: blur(10px);
+  border-left:1px solid rgba(184,138,44,.22);
+  box-shadow: 0 20px 80px rgba(0,0,0,.25);
+  display:flex;flex-direction:column;
+}
+.cart-head{
+  padding:14px 14px;
+  display:flex;align-items:center;justify-content:space-between;
+  border-bottom:1px solid rgba(184,138,44,.18);
+}
+.cart-head h4{margin:0;font-family:"Playfair Display",serif;font-size:18px}
+.cart-close{
+  width:40px;height:40px;border-radius:14px;
+  border:1px solid rgba(184,138,44,.22);
+  background:#fff;
+  cursor:pointer;
+}
+.cart-body{padding:12px 14px;overflow:auto;display:grid;gap:10px}
+.cart-item{
+  border:1px solid rgba(184,138,44,.18);
+  border-radius:16px;
+  background:rgba(255,255,255,.78);
+  padding:10px;
+  display:grid;
+  grid-template-columns: 1fr auto;
+  gap:8px;
+}
+.cart-item h5{margin:0;font-size:14px}
+.cart-item .meta{color:var(--muted);font-size:12px;line-height:1.4}
+.cart-qty{
+  display:inline-flex;align-items:center;gap:8px;
+}
+.qty-btn{
+  width:34px;height:34px;border-radius:12px;
+  border:1px solid rgba(184,138,44,.22);
+  background:#fff;cursor:pointer;font-weight:900;
+}
+.qty-val{min-width:18px;text-align:center;font-weight:800}
+.cart-foot{
+  margin-top:auto;
+  padding:12px 14px 16px;
+  border-top:1px solid rgba(184,138,44,.18);
+  background:rgba(255,255,255,.8);
+}
+.cart-total{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.cart-actions{display:flex;gap:10px}
+.cart-actions .btn{flex:1}
+
+.payment-actions {
+  display: flex;
+  flex-direction: column; /* 👈 ESSENCIAL */
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.payment-btn {
+  width: 100%;             /* 👈 ocupa toda a largura */
+  text-align: center;
+  padding: 14px 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  transition: transform .15s ease, opacity .15s ease;
+}
+
+.payment-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.payment-btn.whatsapp {
+  background: #25d366;
+}
+
+.payment-btn.instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
+/* ===== MOBILE BOOST (não altera desktop) ===== */
+@media (max-width: 560px){
+
+  /* 1) Header: logo e textos menores + mais respiro */
+  .header-inner{ padding: 10px 0; gap: 10px; }
+  .brand{ gap: 10px; }
+  .brand-logo{ width: 56px; }
+  .brand-text h1{ font-size: 18px; }
+  .brand-text p{ font-size: 12px; }
+
+  /* 2) Botões: mais fáceis de clicar no mobile */
+  .btn{ padding: 12px 12px; border-radius: 14px; }
+  .btn-small{ padding: 10px 12px; }
+
+  /* 3) Hero: tipografia e CTAs em coluna */
+  .hero{ padding: 16px 0; }
+  .hero-left{ padding: 16px; }
+  .hero-left h2{ font-size: 26px; }
+  .hero-cta{
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-cta .btn{ width: 100%; }
+
+  /* 4) Carrossel: altura menor e logo menor */
+  .carousel{ min-height: 220px; }
+  .carousel-logo{
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    right: 10px; top: 10px;
+  }
+  .carousel-overlay{ left: 10px; top: 10px; }
+
+  /* 5) Filtros: chips e busca 100% */
+  .filters{ padding: 10px; gap: 8px; }
+  .chip{ padding: 10px 10px; font-size: 13px; }
+  .search{ width: 100%; }
+  .search input{ width: 100%; }
+
+  /* 6) Cards: imagem menor e ações em coluna (mais confortável) */
+  .card{ min-height: auto; }
+  .card-top{ padding: 12px; }
+  .card-mid{ padding: 0 12px 12px; }
+  .card-image{ height: 190px; }
+  .card-actions{
+    padding: 12px;
+    flex-direction: column;
+  }
+  .card-actions .btn{ width: 100%; }
+
+  /* 7) Footer: tudo em coluna e mais espaçamento */
+  .footer-inner{ gap: 14px; }
+  .footer-bottom{ flex-direction: column; align-items: flex-start; }
+
+  /* 8) Menu mobile: abre sem “vazar” da tela */
+  .nav-menu{
+    right: 4vw;
+    top: 64px; /* um pouco mais alinhado com header menor */
+  }
+}
+@media (max-width: 400px){
+  .brand-text h1{ font-size: 16px; }
+  .hero-left h2{ font-size: 24px; }
+  .badge{ font-size: 11px; }
+}
+/* =========================
+   MOBILE: header + hero + carrinho (sem mexer no desktop)
+   ========================= */
+@media (max-width: 560px){
+
+  /* Container um pouco mais “cheio” no mobile */
+  .container{ width:min(1120px,94vw); }
+
+  /* HEADER vira “2 linhas”: topo (logo + menu) e baixo (carrinho + whatsapp) */
+  .header-inner{
+    display:grid;
+    grid-template-columns: 1fr auto; /* brand + botão menu */
+    grid-template-areas:
+      "brand nav"
+      "actions actions";
+    gap:10px;
+    padding:10px 0;
+    align-items:center;
+  }
+
+  .brand{ grid-area: brand; }
+  .nav{ grid-area: nav; justify-self:end; }
+  .cart-btn{ grid-area: actions; }
+  #whatsHeader{ grid-area: actions; }
+
+  /* Deixa logo e texto menores */
+  .brand-logo{ width:52px; }
+  .brand-text h1{ font-size:18px; }
+  .brand-text p{ font-size:12px; }
+
+  /* “Linha” de ações: carrinho e WhatsApp um abaixo do outro (mais confortável) */
+  .cart-btn, #whatsHeader{
+    width:100%;
+    justify-content:center;
+  }
+  .cart-btn{ order:1; }
+  #whatsHeader{ order:2; }
+
+  /* Menu dropdown: posiciona abaixo do header */
+  .nav-menu{
+    top: 64px;
+    right: 4vw;
+    width: min(320px, 92vw);
+  }
+
+  /* HERO: CTA e botões de pagamento sempre em coluna */
+  .hero{ padding:16px 0; }
+  .hero-left{ padding:16px; }
+  .hero-left h2{ font-size:26px; }
+  .hero-cta{
+    flex-direction:column;
+    align-items:stretch;
+  }
+  .hero-cta .btn{ width:100%; }
+
+  /* Bloco de pagamento (como está no HTML) mais “clean” no mobile */
+  .payment-info p{
+    margin: 10px 0 0;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .payment-actions{ gap:10px; }
+  .payment-btn{ border-radius: 14px; }
+
+  /* Carrossel menor e logo menor */
+  .carousel{ min-height:220px; }
+  .carousel-logo{ width:44px; height:44px; border-radius:12px; }
+
+  /* Cards: ações em coluna */
+  .card-image{ height:190px; }
+  .card-actions{ flex-direction:column; }
+}
+/* ===== MOBILE HEADER FIX (sem mexer no desktop) ===== */
+@media (max-width: 560px){
+
+  /* Header em 2 linhas, organizado */
+  .header-inner{
+    display:grid;
+    grid-template-columns: 1fr auto auto; /* brand | carrinho | menu */
+    grid-template-areas:
+      "brand cart nav"
+      "whats whats whats";
+    gap:10px;
+    padding:10px 0;
+    align-items:center;
+  }
+
+  .brand{ grid-area: brand; }
+  .nav{ grid-area: nav; justify-self:end; }
+  .cart-btn{ grid-area: cart; justify-self:end; }
+  #whatsHeader{ grid-area: whats; }
+
+  /* Logo e texto menores */
+  .brand-logo{ width:52px; }
+  .brand-text h1{ font-size:18px; }
+  .brand-text p{ font-size:12px; }
+
+  /* Carrinho vira botão pequeno (só ícone + badge) */
+  .cart-btn{
+    width:42px;
+    height:42px;
+    padding:0;
+    border-radius:14px;
+    justify-content:center;
+    gap:0;
+  }
+  .cart-btn .cart-ico{ font-size:18px; }
+  .cart-btn{ font-size:0; } /* esconde o texto “Carrinho” */
+  .cart-btn .cart-badge{
+    position:absolute;
+    top:-6px;
+    right:-6px;
+    min-width:20px;
+    height:20px;
+    font-size:11px;
+    background:#fff;
+  }
+
+  /* WhatsApp fica grande e sozinho na linha de baixo */
+  #whatsHeader{
+    width:100%;
+    justify-content:center;
+  }
+
+  /* Menu dropdown alinhado abaixo do header */
+  .nav-menu{
+    top: 64px;
+    right: 4vw;
+    width: min(320px, 92vw);
+  }
+}
+
+
+
+
