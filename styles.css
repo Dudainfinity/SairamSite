@@ -522,6 +522,12 @@ a{color:inherit;text-decoration:none}
   }
 }
 
+button.added {
+  background: #4CAF50;
+  color: #fff;
+  cursor: not-allowed;
+  opacity: 0.9;
+}
 
 
 
