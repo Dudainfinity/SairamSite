@@ -999,23 +999,6 @@ products.push(
 
 );
 
-// ================== NOVA FUNÇÃO (ADICIONADA) ==================
-function markAddedButtons(){
-  const cart = loadCart();
-  const namesInCart = cart.map(i => i.name);
-
-  document.querySelectorAll("[data-add-cart]").forEach(btn => {
-    const name = btn.getAttribute("data-name");
-    if(namesInCart.includes(name)){
-      btn.textContent = "Adicionado ✓";
-      btn.disabled = true;
-      btn.classList.add("added");
-    }
-  });
-}
-// =============================================================
-
-
 
 function bindAddToCartButtons(){
   document.querySelectorAll("[data-add-cart]").forEach(btn => {
