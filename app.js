@@ -180,8 +180,8 @@ const products = [
   },
   {
     "category": "FEMININO",
-    "name": "KIT YARA",
-    "basePrice": 225,
+    "name": "KIT YARA 25ml a unid",
+    "basePrice": 294,
     "image": "images/kit-yara.jpg"
   },
   {
