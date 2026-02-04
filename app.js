@@ -16,7 +16,7 @@ const products = [
   
     "category": "MASCULINO",
     "name": "AMMER AL ARAB",
-    "basePrice": 220,00,
+    "basePrice": 220,
     "image": "images/ameer.webp"
   },
 
