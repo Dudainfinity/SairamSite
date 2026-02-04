@@ -1,6 +1,6 @@
 const WHATS_NUMBER = "5531994559796";
 const INSTAGRAM = "sairam.importsperfumes";
-const PRICE_BUMP = 146;
+const PRICE_BUMP = 145;
 
 
 setupPaymentButtons();
@@ -13,40 +13,58 @@ const products = [
     "basePrice": 149,
     "image": "images/asad-preto.jpg"
   },
+  
+    "category": "MASCULINO",
+    "name": "AMMER AL ARAB",
+    "basePrice": 220,00,
+    "image": "images/ameer.webp"
+  },
+
+    "category": "MASCULINO",
+    "name": "ATTARAL WESAL",
+    "basePrice": 149,
+    "image": "images/attar.webp"
+  },
+
+    "category": "MASCULINO",
+    "name": "AFEEF",
+    "basePrice": 260,
+    "image": "images/afeef.webp"
+  },
   {
     "category": "MASCULINO",
     "name": "ASAD ELIXIR",
-    "basePrice": 199,
+    "basePrice": 200,
     "image": "images/asad-elixir.webp"
   },
   {
     "category": "MASCULINO",
     "name": "ASAD ZANZIBAR LIMITED",
-    "basePrice": 159,
+    "basePrice": 160,
     "image": "images/asad-zanzibar-limited.jpg"
   },
   {
     "category": "MASCULINO",
     "name": "ASAD BOURBON",
-    "basePrice": 199,
+    "basePrice": 200,
     "image": "images/assad-bourbon.jpg"
   },
   {
     "category": "MASCULINO",
     "name": "Emarati khanjar",
-    "basePrice": 349,
+    "basePrice": 350,
     "image": "images/Emarati-khanjar.jpg"
   },
   {
     "category": "MASCULINO",
     "name": "COCOA MORADO",
-    "basePrice": 244,
+    "basePrice": 245,
     "image": "images/cocoa-morado.jpg"
   },
   {
     "category": "MASCULINO",
     "name": "KHALID LATTAFA",
-    "basePrice": 213,
+    "basePrice": 215,
     "image": "images/khalid-lattafa.jpg"
   },
   {
@@ -109,13 +127,13 @@ const products = [
   {
     "category": "MASCULINO",
     "name": "MAITRE DE BLUE",
-    "basePrice": 159,
+    "basePrice": 160,
     "image": "images/maitre-blue.jpg"
   },
   {
     "category": "MASCULINO",
     "name": "HAWAS BLACK",
-    "basePrice": 224,
+    "basePrice": 225,
     "image": "images/hawas-black.jpg"
   },
   {
@@ -169,7 +187,7 @@ const products = [
   {
     "category": "MASCULINO",
     "name": "DUBAI CHOCOLATE ODYSSEY",
-    "basePrice": 199,
+    "basePrice": 200,
     "image": "images/dubai-chocolate-odyssey.jpg"
   },
   {
@@ -181,7 +199,7 @@ const products = [
   {
     "category": "FEMININO",
     "name": "KIT YARA, 25ml a unidade",
-    "basePrice": 294,
+    "basePrice": 295,
     "image": "images/kit-yara.jpg"
   },
   {
@@ -212,7 +230,7 @@ const products = [
   {
     "category": "FEMININO",
     "name": "YUM YUM",
-    "basePrice": 289,
+    "basePrice": 290,
     "image": "images/yum-yum.jpg"
   },
   {
@@ -236,7 +254,7 @@ const products = [
   {
     "category": "FEMININO",
     "name": "FAKHAR GOLD",
-    "basePrice": 179,
+    "basePrice": 180,
     "image": "images/Fakhar-Gold.jpg"
   },
   {
@@ -248,13 +266,13 @@ const products = [
   {
     "category": "FEMININO",
     "name": "AMERAT AL ARAB VERMELHO",
-    "basePrice": 189,
+    "basePrice": 190,
     "image": "images/amerat-al-arab-vermelho.jpg"
   },
   {
     "category": "FEMININO",
     "name": "SABAH AL WARED",
-    "basePrice": 178,
+    "basePrice": 180,
     "image": "images/sabah-al-wared.jpg"
   },
   {
@@ -290,7 +308,7 @@ const products = [
   {
     "category": "FEMININO",
     "name": "CHANTS",
-    "basePrice": 148,
+    "basePrice": 150,
     "image": "images/chants.jpg"
   },
   {
@@ -339,7 +357,7 @@ const products = [
   {
     "category": "FEMININO",
     "name": "THE KINGDOM",
-    "basePrice": 199,
+    "basePrice": 200,
     "image": "images/the-kingdom-feminino.jpg"
   },
   {
@@ -393,211 +411,211 @@ products.push(
 {
   "category": "MASCULINO",
   "name": "RAGHBA FOR MAN",
-  "basePrice": 229,
+  "basePrice": 230,
   "image": "images/raghba-for-man.jpg"
 },
 {
   "category": "MASCULINO",
   "name": "EJAZI",
-  "basePrice": 219,
+  "basePrice": 220,
   "image": "images/ejazi.webp"
 },
 {
   "category": "MASCULINO",
   "name": "EJAZI SILVER",
-  "basePrice": 239,
+  "basePrice": 240,
   "image": "images/ejazi-silver.webp"
 },
 {
   "category": "MASCULINO",
   "name": "SUQRAAT",
-  "basePrice": 219,
+  "basePrice": 220,
   "image": "images/suqraat.webp"
 },
 {
   "category": "MASCULINO",
   "name": "SHEIKH AL SHUYUKH FINAL EDITION",
-  "basePrice": 249,
+  "basePrice": 250,
   "image": "images/sheikh-al-shuyukh-final.webp"
 },
 {
   "category": "MASCULINO",
   "name": "SHEIKH AL SHUYUKH LUXE EDITION",
-  "basePrice": 269,
+  "basePrice": 270,
   "image": "images/sheikh-al-shuyukh-luxe.webp"
 },
 {
   "category": "MASCULINO",
   "name": "NAJDIA",
-  "basePrice": 199,
+  "basePrice": 200,
   "image": "images/najdia.webp"
 },
 {
   "category": "MASCULINO",
   "name": "NAJDIA TRIBUTE",
-  "basePrice": 229,
+  "basePrice": 230,
   "image": "images/najdia-tribute.webp"
 },
 {
   "category": "MASCULINO",
   "name": "AL QIAM SILVER",
-  "basePrice": 279,
+  "basePrice": 280,
   "image": "images/al-qiam-silver.webp"
 },
 {
   "category": "MASCULINO",
   "name": "RAED SILVER",
-  "basePrice": 239,
+  "basePrice": 240,
   "image": "images/raed-silver.jpg"
 },
 {
   "category": "MASCULINO",
   "name": "RAMZ SILVER",
-  "basePrice": 219,
+  "basePrice": 220,
   "image": "images/ramz-silver.webp"
 },
 {
   "category": "MASCULINO",
   "name": "TAG-HIM",
-  "basePrice": 229,
+  "basePrice": 230,
   "image": "images/tag-him.webp"
 },
 {
   "category": "MASCULINO",
   "name": "ODYSSEY HOMME",
-  "basePrice": 279,
+  "basePrice": 280,
   "image": "images/odyssey-homme.webp"
 },
 {
   "category": "MASCULINO",
   "name": "ODYSSEY MANDARIN SKY",
-  "basePrice": 299,
+  "basePrice": 300,
   "image": "images/odyssey-mandarin-sky.webp"
 },
 {
   "category": "MASCULINO",
   "name": "ODYSSEY AQUA",
-  "basePrice": 279,
+  "basePrice": 280,
   "image": "images/odyssey-aqua.webp"
 },
 {
   "category": "MASCULINO",
   "name": "HUNTER INTENSE",
-  "basePrice": 249,
+  "basePrice": 250,
   "image": "images/hunter-intense.webp"
 },
 {
   "category": "MASCULINO",
   "name": "VENTANA",
-  "basePrice": 229,
+  "basePrice": 230,
   "image": "images/ventana.webp"
 },
 {
   "category": "MASCULINO",
   "name": "CLUB DE NUIT INTENSE MAN EDT",
-  "basePrice": 279,
+  "basePrice": 280,
   "image": "images/club-de-nuit-intense-man.jpg"
 },
 {
   "category": "MASCULINO",
   "name": "CLUB DE NUIT SILLAGE",
-  "basePrice": 329,
+  "basePrice": 330,
   "image": "images/club-de-nuit-sillage.jpg"
 },
 {
   "category": "MASCULINO",
   "name": "CLUB DE NUIT MILESTONE",
-  "basePrice": 319,
+  "basePrice": 320,
   "image": "images/club-de-nuit-milestone.webp"
 },
 {
   "category": "MASCULINO",
   "name": "CLUB DE NUIT ICONIC",
-  "basePrice": 329,
+  "basePrice": 330,
     "image": "images/Club-de-Nuit-Iconic.webp"
 },
 {
   "category": "MASCULINO",
   "name": "CLUB DE NUIT URBAN MAN ELIXIR",
-  "basePrice": 309,
+  "basePrice": 310,
   "image": "images/club-de-nuit-urban-man-elixir.webp"
 },
 {
   "category": "MASCULINO",
   "name": "9PM",
-  "basePrice": 279,
+  "basePrice": 280,
   "image": "images/9pm.jpg"
 },
 {
   "category": "MASCULINO",
   "name": "9AM DIVE",
-  "basePrice": 299,
+  "basePrice": 300,
   "image": "images/9am-dive.webp"
 },
 {
   "category": "MASCULINO",
   "name": "TURATHI BLUE",
-  "basePrice": 329,
+  "basePrice": 330,
   "image": "images/turathi-blue.webp"
 },
 {
   "category": "MASCULINO",
   "name": "SUPREMACY NOT ONLY INTENSE",
-  "basePrice": 349,
+  "basePrice": 350,
   "image": "images/supremacy-not-only-intense.jpg"
 },
 {
   "category": "MASCULINO",
   "name": "SUPREMACY IN HEAVEN",
-  "basePrice": 329,
+  "basePrice": 330,
   "image": "images/supremacy-in-heaven.webp"
 },
 {
   "category": "MASCULINO",
   "name": "SUPREMACY SILVER",
-  "basePrice": 299,
+  "basePrice": 300,
   "image": "images/supremacy-silver.jpg"
 },
 {
   "category": "MASCULINO",
   "name": "MODEST UNE",
-  "basePrice": 279,
+  "basePrice": 280,
   "image": "images/modest-une.webp"
 },
 {
   "category": "MASCULINO",
   "name": "RARE CARBON",
-  "basePrice": 349,
+  "basePrice": 350,
   "image": "images/rare-carbon.webp"
 },
 {
   "category": "MASCULINO",
   "name": "DETOUR NOIR",
-  "basePrice": 279,
+  "basePrice": 280,
     "image": "images/Detour-noir.webp"
 },
 {
   "category": "MASCULINO",
   "name": "L’AVENTURE",
-  "basePrice": 309,
+  "basePrice": 310,
   "image": "images/l'aventure.webp"
 },
 {
   "category": "MASCULINO",
   "name": "HAYATI",
-  "basePrice": 249,
+  "basePrice": 250,
   "image": "images/hayati.webp"
 },
 {
   "category": "MASCULINO",
   "name": "LA YUQAWAM POUR HOMME",
-  "basePrice": 299,
+  "basePrice": 300,
   "image": "images/la-yuqawam-pour-homme.jpg"
 },
 {
   "category": "MASCULINO",
   "name": "SHUHRAH POUR HOMME",
-  "basePrice": 239,
+  "basePrice": 240,
   "image": "images/shuhrah-pour-homme.webp"
 },
 {
@@ -609,80 +627,80 @@ products.push(
 {
   "category": "MASCULINO",
   "name": "DAAREJ POUR HOMME",
-  "basePrice": 179,
+  "basePrice": 180,
   "image": "images/daarej-pour-homme.webp"
 },
 {
   "category": "MASCULINO",
   "name": "KISMET FOR MEN",
-  "basePrice": 229,
+  "basePrice": 230,
   "image": "images/kismet-for-men.jpeg"
 },
 {
   "category": "MASCULINO",
   "name": "SALVO",
-  "basePrice": 199,
+  "basePrice": 200,
   "image": "images/salvo.webp"
 },
 {
   "category": "MASCULINO",
   "name": "SALVO INTENSE",
-  "basePrice": 299,
+  "basePrice": 300,
   "image": "images/salvo-intense.jpeg"
 },
 {
   "category": "MASCULINO",
   "name": "VICTORIOSO",
-  "basePrice": 199,
+  "basePrice": 200,
   "image": "images/victorioso.jpg"
 },
 {
   "category": "MASCULINO",
   "name": "VICTORIOSO LEGEND",
-  "basePrice": 219,
+  "basePrice": 220,
   "image": "images/victorioso-legend.webp"
 },
 {
   "category": "MASCULINO",
   "name": "VICTORIOSO VICTORY",
-  "basePrice": 219,
+  "basePrice": 220,
     "image": "images/Victorioso-Victory.jpg"
 },
 {
   "category": "MASCULINO",
   "name": "THE TUX",
-  "basePrice": 279,
+  "basePrice": 280,
   "image": "images/the-tux.webp"
 },
 {
   "category": "MASCULINO",
   "name": "JEAN LOWE IMMORTEL",
-  "basePrice": 299,
+  "basePrice": 300,
   "image": "images/jean-lowe-immortel.webp"
 },
 {
   "category": "MASCULINO",
   "name": "JEAN LOWE NOIR",
-  "basePrice": 299,
+  "basePrice": 300,
   "image": "images/jean-lowe-noir.webp"
 },
 {
   "category": "MASCULINO",
   "name": "JEAN LOWE FRAICHE",
-  "basePrice": 299,
+  "basePrice": 300,
   "image": "images/jean-lowe-fraiche.png"
 },
 
 {
   "category": "FEMININO",
   "name": "SO CANDID",
-  "basePrice": 199,
+  "basePrice": 200,
   "image": "images/so-candid.webp"
 },
 {
   "category": "FEMININO",
   "name": "BHARARA ROSE",
-  "basePrice": 599,
+  "basePrice": 600,
   "image": "images/bharara-rose.webp"
 },
 {
@@ -694,7 +712,7 @@ products.push(
 {
   "category": "FEMININO",
   "name": "DELILAH",
-  "basePrice": 229,
+  "basePrice": 230,
   "image": "images/delilah.webp"
 },
 {
@@ -706,25 +724,25 @@ products.push(
 {
   "category": "FEMININO",
   "name": "ECLAIRE PISTACHE",
-  "basePrice": 199,
+  "basePrice": 200,
   "image": "images/eclaire-pistache.webp"
 },
 {
   "category": "FEMININO",
   "name": "ROSES ARE WHITE",
-  "basePrice": 199,
+  "basePrice": 200,
   "image": "images/roses-are-white.jpg"
 },
 {
   "category": "FEMININO",
   "name": "MISS MAGNIFIQ",
-  "basePrice": 169,
+  "basePrice": 170,
   "image": "images/miss-magnifiq.jpg"
 },
 {
   "category": "FEMININO",
   "name": "MISS AMNIA",
-  "basePrice": 169,
+  "basePrice": 170,
   "image": "images/miss-amnia.webp"
 },
 {
@@ -742,20 +760,20 @@ products.push(
 {
   "category": "FEMININO",
   "name": "ATHEERI",
-  "basePrice": 199,
+  "basePrice": 200,
   "image": "images/atheeri.webp"
 },
 {
   "category": "FEMININO",
   "name": "MAYAR PINK",
-  "basePrice": 189,
+  "basePrice": 190,
   "image": "images/mayar.jpeg"
 },
 
 {
   "category": "UNISSEX",
   "name": "1505 AL COLLECTION D’ANTIQUITÉS",
-  "basePrice": 399,
+  "basePrice": 400,
   "image": "images/dantiquites-1505.webp"
 },
 {
@@ -791,7 +809,7 @@ products.push(
 {
   "category": "UNISSEX",
   "name": "ISHQ AL SHUYUKH",
-  "basePrice": 229,
+  "basePrice": 230,
   "image": "images/ishq-al-prata.png"
 },
 {
@@ -803,37 +821,37 @@ products.push(
 {
   "category": "UNISSEX",
   "name": "MANAAL DE ARD AL ZAAFARAN",
-  "basePrice": 169,
+  "basePrice": 170,
   "image": "images/manaal-de-ard-al-zaafaran.jpg"
 },
 {
   "category": "UNISSEX",
   "name": "THOUQ",
-  "basePrice": 169,
+  "basePrice": 170,
   "image": "images/thouq.webp"
 },
 {
   "category": "UNISSEX",
   "name": "HAMID HATSHEPSUT LEGACY",
-  "basePrice": 299,
+  "basePrice": 300,
   "image": "images/hamidi-eau-de-parfum.jpg"
 },
 {
   "category": "UNISSEX",
   "name": "NEFERTITI HAMIDI LEGACY",
-  "basePrice": 299,
+  "basePrice": 300,
   "image": "images/nefertiti.webp"
 },
 {
   "category": "UNISSEX",
   "name": "AL NOBLE SAFER",
-  "basePrice": 199,
+  "basePrice": 200,
   "image": "images/al-noble-safer.webp"
 },
 {
   "category": "UNISSEX",
   "name": "VINTAGE CASTLE",
-  "basePrice": 169,
+  "basePrice": 170,
   "image": "images/vintage-castle.jpg"
 },
 {
@@ -869,55 +887,55 @@ products.push(
 {
   "category": "UNISSEX",
   "name": "PHOHIBIT PARFUM INTENSE",
-  "basePrice": 179,
+  "basePrice": 180,
   "image": "images/prohibit-parfum-intense.jpeg"
 },
 {
   "category": "UNISSEX",
   "name": "PROHIBIT INTENSE",
-  "basePrice": 179,
+  "basePrice": 180,
     "image": "images/Prohibit-Intense.webp"
 },
 {
   "category": "UNISSEX",
   "name": "EMAAN",
-  "basePrice": 199,
+  "basePrice": 200,
   "image": "images/emaan.webp"
 },
 {
   "category": "UNISSEX",
   "name": "MASHRABYA",
-  "basePrice": 199,
+  "basePrice": 200,
   "image": "images/mashrabya.webp"
 },
 {
   "category": "UNISSEX",
   "name": "HISTORIC DORRIA",
-  "basePrice": 199,
+  "basePrice": 200,
   "image": "images/historic-dorria.webp"
 },
 {
   "category": "UNISSEX",
   "name": "HISTORIC OLMEDA",
-  "basePrice": 199,
+  "basePrice": 200,
   "image": "images/historic-olmeda.webp"
 },
 {
   "category": "UNISSEX",
   "name": "HISTORIC SAHARA",
-  "basePrice": 199,
+  "basePrice": 200,
   "image": "images/historic-sahara.webp"
 },
 {
   "category": "UNISSEX",
   "name": "SILVER SCENT INTENSE",
-  "basePrice": 129,
+  "basePrice": 130,
     "image": "images/Silver-Scent-Intense.webp"
 },
 {
   "category": "UNISSEX",
   "name": "SILVER SCENT",
-  "basePrice": 119,
+  "basePrice": 160,
   "image": "images/silver-scent.webp"
 },
 {
@@ -929,25 +947,25 @@ products.push(
 {
   "category": "UNISSEX",
   "name": "SAFWAAN",
-  "basePrice": 129,
+  "basePrice": 130,
   "image": "images/safwaan.jpg"
 },
 {
   "category": "UNISSEX",
   "name": "THE DONE ASTRODOME",
-  "basePrice": 149,
+  "basePrice": 150,
   "image": "images/the-done.webp"
 },
 {
   "category": "UNISSEX",
   "name": "THE DONE CAPITOL",
-  "basePrice": 149,
+  "basePrice": 150,
   "image": "images/the-done-capitol.webp"
 },
 {
   "category": "UNISSEX",
   "name": "THE DONE REICHSTAG",
-  "basePrice": 149,
+  "basePrice": 150,
   "image": "images/the-done-reichstag.webp"
 },
 
