@@ -13,24 +13,6 @@ const products = [
     "basePrice": 149,
     "image": "images/asad-preto.jpg"
   },
-  
-    "category": "MASCULINO",
-    "name": "AMMER AL ARAB",
-    "basePrice": 220,
-    "image": "images/ameer.webp"
-  },
-
-    "category": "MASCULINO",
-    "name": "ATTARAL WESAL",
-    "basePrice": 149,
-    "image": "images/attar.webp"
-  },
-
-    "category": "MASCULINO",
-    "name": "AFEEF",
-    "basePrice": 260,
-    "image": "images/afeef.webp"
-  },
   {
     "category": "MASCULINO",
     "name": "ASAD ELIXIR",
@@ -207,7 +189,6 @@ const products = [
     "name": "YARA ELIXIR",
     "basePrice": 210,
     "image": "images/yara-elixir.jpg"
-
   },
   {
     "category": "FEMININO",
@@ -352,7 +333,6 @@ const products = [
     "name": "HER CONFESSION BRANCO",
     "basePrice": 240,
     "image": "images/her-confession.jpg"
-
   },
   {
     "category": "FEMININO",
